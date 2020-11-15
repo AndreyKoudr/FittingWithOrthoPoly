@@ -12,12 +12,15 @@
   ----------
   Input : pairs of x-y points, Output : Jacobi poly. The code builds ortho poly 
 approximation on points f(x). x must be monotonically increasing.
+
   Parameter U is within [-1.0 .. +1.0] everywhere.
+  
   Parameters alpha and beta define type of Jacobi polynomial; the case 
 alpha = beta = 0.0 corresponds to a Legendre poly. This case is common for
 approximation of most curves. But if you need to fit a curve y(x) with infinite 
 derivatives at the ends, like a half circle, or an aerofoil surface, 
 set alpha = beta = 0.5.
+
   The trick is that actually f(x) / ((1 - x) ^ alpha) * (1 + x) ^ beta), not 
 f(x), is approximated.
 
@@ -26,6 +29,7 @@ f(x), is approximated.
   As the poly is orthogonal, it means that approxomation coefs are calculated by 
 integration. There are two ways to integrate : by numerical Gauss (set fit() 
 parameter as GAUSSINT_8 for example) or by trapezoid rule (set OTHER_INTEGRATION). 
+
 Keep in mind that Gauss integration is built upon a single poly itself and it 
 cannot well integrate curves of multiple bends. Use trapezoid rule for this, but 
 it requires many points.
