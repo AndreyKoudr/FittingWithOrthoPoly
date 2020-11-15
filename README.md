@@ -39,16 +39,30 @@ calculation problems will appear (no checks).
   Tests
   -----
 Test 1 : horizontal curve, Legendre poly (0.0,0.0) and Gauss integration
+
 Accuracy 0.000000
+
 Test 2 : horizontal curve, Legendre poly (0.0,0.0) and trapezoid integration, few points
+
 Accuracy 0.000000
+
 Test 3 : horizontal curve, Legendre poly (0.0,0.0) and trapezoid integration, many points
+
 Accuracy 0.000000
+
 Test 4 : half of circle, infinite derivative at ends, Legendre poly (0.0,0.0) and Gauss integration
+
 Accuracy 0.384346
+
 Test 5 : half of circle, infinite derivative at ends, use Jacoby poly (0.5,0.5) and Gauss integration
+
 Accuracy 0.006320
+
 Test 6 : fitting cos curve from 0 to 4 Pi. Legendre poly. Trapezoidal integration on many points
+
 Accuracy 0.052173
+
 Test 7 : fitting cos curve from 0 to 4 Pi. Legendre poly. Gauss integration on many points
+
 Accuracy 0.052173
+
