@@ -10,7 +10,7 @@
 
   Parameters
   ----------
-  Input : pairs of x-y points, Output : Jacobi poly. The code builds ortho poly 
+  Input : pairs of x-y points, output : Jacobi poly. The code builds ortho poly 
 approximation on points f(x). x must be monotonically increasing.
 
   Parameter U is within [-1.0 .. +1.0] (which maps to [xmin..xmax]) everywhere.
@@ -21,7 +21,7 @@ approximation of most curves. But if you need to fit a curve y(x) with infinite
 derivatives at the ends, like a half circle, or an aerofoil surface, 
 set alpha = beta = 0.5.
 
-  The trick is that actually f(x) / ((1 - x) ^ alpha) * (1 + x) ^ beta), not 
+  <B>The trick is</B> that actually f(x) / ((1 - x) ^ alpha) * (1 + x) ^ beta), not 
 f(x), is approximated.
 
   Integration
