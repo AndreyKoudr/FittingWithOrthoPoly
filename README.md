@@ -6,16 +6,16 @@
 
   Compiler
   --------
-  VS 2019 console, can be easily converted into Linux : just std:: and C++ 11/14.
+  VS 2019 console, can be easily converted into Linux : just std:: and C++ 11/14 are used.
 
   Parameters
   ----------
   Input : pairs of x-y points, Output : Jacobi poly. The code builds ortho poly 
 approximation on points f(x). x must be monotonically increasing.
 
-  Parameter U is within [-1.0 .. +1.0] everywhere.
+  Parameter U is within [-1.0 .. +1.0] (which maps to [xmin..xmax]) everywhere.
   
-  Parameters alpha and beta define type of Jacobi polynomial; the case 
+  Parameters alpha and beta define a type of Jacobi polynomial; the case 
 alpha = beta = 0.0 corresponds to a Legendre poly. This case is common for
 approximation of most curves. But if you need to fit a curve y(x) with infinite 
 derivatives at the ends, like a half circle, or an aerofoil surface, 
