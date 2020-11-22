@@ -26,7 +26,7 @@ f(x), is approximated.
 
   Integration
   -----------
-  As the poly is orthogonal, it means that approxomation coefs are calculated by 
+  As the poly is orthogonal, it means that approximation coefs are calculated by 
 integration. There are two ways to integrate : by numerical Gauss (set fit() 
 parameter as GAUSSINT_8 for example) or by trapezoid rule (set OTHER_INTEGRATION). 
 
